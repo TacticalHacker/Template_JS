@@ -1,0 +1,13 @@
+{
+  "name": "template-js",
+  "version": "1.0.0",
+  "description": "Template repo for SST frontend backend",
+  "main": "infra/index.js",
+  "scripts": {
+    "start": "node infra/index.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": ["template", "javascript", "sst"],
+  "author": "Tactical Hacker",
+  "license": "MIT"
+}
