@@ -1,13 +1,45 @@
 {
-  "name": "template-js",
+  "name": "@template/root",
+  "description": "Base folder for SST template",
   "version": "1.0.0",
-  "description": "Template repo for SST frontend backend",
-  "main": "infra/index.js",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "backend",
+    "frontend",
+    "shared"
+  ],
   "scripts": {
-    "start": "node infra/index.js",
-    "test": "echo \"No tests specified\" && exit 0"
+    "prep": "npm install",
+    "lint": "biome check --write --unsafe",
+    "dev": "sst dev",
+    "sst:install": "sst install",
+    "deploy": "sst deploy",
+    "upload:frontend": "node scripts/upload-to-s3.cjs",
+    "remove": "sst remove",
+    "unlock": "sst unlock",
+    "console": "sst console"
   },
-  "keywords": ["template", "javascript", "sst"],
-  "author": "Tactical Hacker",
-  "license": "MIT"
+  "devDependencies": {
+    "@biomejs/biome": "~1.9.4",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@tsconfig/node22": "^22",
+    "@types/aws-lambda": "^8.10.149",
+    "@types/mime-types": "^2.1.2",
+    "@types/node": "^20.10.5",
+    "@vitest/coverage-v8": "~3.1.2",
+    "cspell": "~8.19.4",
+    "ts-node": "^10.9.1",
+    "typescript": "~5.8.3",
+    "vitest": "~3.1.2"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.806.0",
+    "@aws-sdk/s3-request-presigner": "^3.821.0",
+    "aws-lambda": "^1.0.7",
+    "pino": "^9.6.0",
+    "sst": "~3.14.20",
+    "zod": "^3.24.4"
+  }
 }
