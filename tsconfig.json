@@ -1,4 +1,5 @@
 {
+  "extends": "./.sst/platform/tsconfig.json",
   "compilerOptions": {
     "module": "NodeNext",
     "target": "ESNext",
