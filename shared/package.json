@@ -1,0 +1,10 @@
+{
+  "name": "@template/shared",
+  "description": "Shared for Template",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest --run --passWithNoTests"
+  }
+}
