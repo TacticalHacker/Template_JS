@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "target": "ESNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "NodeNext",
+    "declaration": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "sourceMap": true,
+    "baseUrl": "."
+  },
+  "include": ["*.ts", "shared", "infra", "backend", "frontend"],
+  "exclude": ["node_modules", "dist", "build", "coverage", "out", "lib"]
+}
