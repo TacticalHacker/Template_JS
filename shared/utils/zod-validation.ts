@@ -1,5 +1,5 @@
 import type { AnyZodObject, SafeParseReturnType, ZodArray } from 'zod';
-import { logger } from '@zica/shared/logger/index.js';
+import { logger } from '@template/shared/logger/index.js';
 
 // biome-ignore lint/suspicious/noExplicitAny: <explanation>
 export type AnyZodObjectSchema = ZodArray<any> | AnyZodObject;
