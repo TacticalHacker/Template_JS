@@ -4,7 +4,7 @@ export const appStages = {
   PROD: 'prod',
 } as const;
 
-export const commonApiConfig = {
+export const commonLambdaConfig = {
   runtime: 'nodejs22.x',
   memory: '256 MB',
   timeout: '10 seconds',

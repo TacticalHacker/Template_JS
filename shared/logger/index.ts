@@ -19,7 +19,7 @@ import { pino } from 'pino';
  * @constant
  * @type {import('pino').Logger}
  */
-export const logger = pino({
+export const logger: import('pino').Logger = pino({
     timestamp: pino.stdTimeFunctions.isoTime,
     formatters: {
         level: (label: string): { level: string } => ({
